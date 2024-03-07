@@ -164,14 +164,20 @@ img {
   height: 80rem;
 }
 .contact {
-  padding: 180px 0 20px 0;
+  padding: 40px 0 20px 0;
   font-size: 40px;
-  color: #007ea7;
+  color: #000000;
+}
+
+.forms {
+  background-color: rgba(128, 128, 128, 0.526);
+  margin: 50px 40rem 0 40rem;
 }
 
 .para {
-  color: #007ea7;
+  color: #065f7d;
   padding-top: 50px;
+  background-color: #80ced77e;
 }
 
 .email,
@@ -189,7 +195,6 @@ form {
   align-content: space-around;
   text-align: center;
   padding: 40px 0 40px 0;
-  margin: 0 40rem 0 40rem;
 }
 
 h3 {

@@ -7,7 +7,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="index, follow" />
-    <meta name="description" content="160carac" />
+    <meta
+      name="description"
+      content="Découvrez mon portfolio en ligne : une vitrine de mes réalisations, compétences et expériences professionnelles. Explorez mon univers créatif !"
+    />
 
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -35,13 +38,13 @@
         <div class="slidervar">
           <div class="slider">
             <div class="slide">
-              <img src="iMG/apropos.png" alt="Image 1" />
+              <a href="#"><img src="iMG/apropos.png" alt="Image 1" /></a>
             </div>
             <div class="slide">
-              <img src="iMG/contact.png" alt="Image 2" />
+              <a href="#"><img src="iMG/contact.png" alt="Image 2" /></a>
             </div>
             <div class="slide">
-              <img src="iMG/skills.png" alt="Image 3" />
+              <a href="#"><img src="iMG/skills.png" alt="Image 3" /></a>
             </div>
           </div>
           <button class="prev" onclick="prevSlide()">&#10094;</button>
@@ -56,38 +59,50 @@
       </div>
       <div class="backgroundmiddle">
         <h2 class="para">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio at sunt,
-          necessitatibus, soluta quibusdam consequatur nulla vero pariatur,
-          quaerat quae rem saepe laudantium. Fugiat perferendis odit ratione
-          hic. Totam, deserunt. <br />
+          Salut, je suis Quentin THUILLIER, j'ai 19 ans et depuis que je suis
+          tout petit, l'informatique m'a toujours passionné. C'est comme si
+          j'avais été attiré par les écrans et les lignes de code dès mon plus
+          jeune âge. Je suis constamment à la recherche de nouvelles
+          connaissances et de nouvelles compétences dans ce domaine en
+          perpétuelle évolution. J'adore explorer les différentes facettes de la
+          technologie, que ce soit la programmation, la conception de logiciels
+          ou même la résolution de problèmes complexes. Pour moi, l'informatique
+          n'est pas seulement un passe-temps, c'est une véritable passion qui me
+          pousse à repousser mes limites et à découvrir de nouvelles
+          possibilités chaque jour.<br />
         </h2>
 
         <h3 class="para">
           <br />
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius,
-          reiciendis.
+          J'adore cacher des secrets dans mes sites :p
         </h3>
+        <div class="forms">
+          <h2 class="contact">Contact Us</h2>
+          <form action="#" method="POST">
+            <label for="email" class="email">Email:</label><br />
+            <input type="email" id="email" name="email" required /><br /><br />
 
-        <h2 class="contact">Contact Us</h2>
-        <form action="#" method="POST">
-          <label for="email" class="email">Email:</label><br />
-          <input type="email" id="email" name="email" required /><br /><br />
+            <label for="subject" class="subject">Object:</label><br />
+            <input
+              type="text"
+              id="subject"
+              name="subject"
+              required
+            /><br /><br />
 
-          <label for="subject" class="subject">Object:</label><br />
-          <input type="text" id="subject" name="subject" required /><br /><br />
+            <label for="message" class="message">Description:</label><br />
+            <textarea
+              id="message"
+              name="message"
+              rows="4"
+              cols="50"
+              required
+            ></textarea
+            ><br /><br />
 
-          <label for="message" class="message">Description:</label><br />
-          <textarea
-            id="message"
-            name="message"
-            rows="4"
-            cols="50"
-            required
-          ></textarea
-          ><br /><br />
-
-          <input type="submit" value="Submit" />
-        </form>
+            <input type="submit" value="Submit" />
+          </form>
+        </div>
       </div>
     </main>
     <footer>

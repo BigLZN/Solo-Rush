@@ -1,4 +1,5 @@
 let slideIndex = 0;
+let intervalId;
 
 function showSlide(n) {
   const slides = document.querySelectorAll(".slide");
@@ -39,4 +40,11 @@ function currentSlide(n) {
 
 document.addEventListener("DOMContentLoaded", function () {
   showSlide(slideIndex);
+  intervalId = setInterval(nextSlide, 5000);
+});
+
+document.querySelectorAll(".slide, .dot").forEach((element) => {
+  element.addEventListener("click", function () {
+    clearInterval(intervalId);
+  });
 });
