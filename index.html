@@ -18,13 +18,13 @@
   <body>
     <header>
       <nav class="Home">
-        <img class="pptop" src="iMG/pp.png" />
+        <a href="index.html"><img class="pptop" src="iMG/pp.png" /></a>
 
         <h1 class="h1">Apprenti Développeur Web</h1>
         <ul>
           <a href="#"><li>A propos</li></a>
-          <a href="#"><li>Project</li></a>
-          <a href="#"><li>Contact</li></a>
+          <a href="index2.html"><li>Project</li></a>
+          <a href="#contact"><li>Contact</li></a>
         </ul>
       </nav>
     </header>
@@ -41,7 +41,7 @@
               <a href="#"><img src="iMG/apropos.png" alt="Image 1" /></a>
             </div>
             <div class="slide">
-              <a href="#"><img src="iMG/contact.png" alt="Image 2" /></a>
+              <a href="#contact"><img src="iMG/contact.png" alt="Image 2" /></a>
             </div>
             <div class="slide">
               <a href="#"><img src="iMG/skills.png" alt="Image 3" /></a>
@@ -76,32 +76,39 @@
           <br />
           J'adore cacher des secrets dans mes sites :p
         </h3>
-        <div class="forms">
-          <h2 class="contact">Contacter moi</h2>
-          <form action="#" method="POST">
-            <label for="email" class="email">Email:</label><br />
-            <input type="email" id="email" name="email" required /><br /><br />
+        <div id="contact">
+          <div class="forms">
+            <h2 class="contact">Contacter moi</h2>
+            <form action="#" method="POST">
+              <label for="email" class="email">Email:</label><br />
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+              /><br /><br />
 
-            <label for="subject" class="subject">Objet:</label><br />
-            <input
-              type="text"
-              id="subject"
-              name="subject"
-              required
-            /><br /><br />
+              <label for="subject" class="subject">Objet:</label><br />
+              <input
+                type="text"
+                id="subject"
+                name="subject"
+                required
+              /><br /><br />
 
-            <label for="message" class="message">Description:</label><br />
-            <textarea
-              id="message"
-              name="message"
-              rows="4"
-              cols="50"
-              required
-            ></textarea
-            ><br /><br />
+              <label for="message" class="message">Description:</label><br />
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                cols="50"
+                required
+              ></textarea
+              ><br /><br />
 
-            <input type="submit" value="Submit" />
-          </form>
+              <input type="submit" value="Submit" />
+            </form>
+          </div>
         </div>
       </div>
     </main>

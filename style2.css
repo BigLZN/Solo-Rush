@@ -1,0 +1,142 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  line-height: 1.5;
+  background-color: #007ea7;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h1,
+h2,
+h3 {
+  color: white;
+  text-align: center;
+  margin: 0;
+  font-weight: bold;
+}
+
+.h2 {
+  padding-bottom: 20px;
+  font-weight: bold;
+  font-size: 80px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  margin: 40px 0 -30px;
+}
+
+/* Partie Header --------------------------------*/
+
+.Home {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  background-color: #003249;
+  padding: 0 20px 0 20px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  font-weight: bold;
+  color: white;
+  font-size: 18px;
+  padding: 30px;
+  display: inline;
+}
+
+ul li:hover {
+  color: #80ced7;
+}
+button:hover {
+  color: #80ced7;
+}
+
+.pptop {
+  width: 70px;
+  height: auto;
+  border-radius: 50px;
+}
+
+/* Partie Slide ------------ Milieu */
+
+.ppmid {
+  width: 300px;
+  border-radius: 250px;
+  border: 3px solid white;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+.slidervar {
+  position: relative;
+  max-width: 600px;
+  margin: auto;
+  padding: 85px 0 200px 0;
+}
+
+.slider {
+  display: flex;
+}
+
+.slide {
+  flex: 0 0 100%;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  transition: transform 0, 5s ease;
+}
+.slider:hover img {
+  transform: scale(1.1);
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+
+/* Partie forms et milieu bas */
+
+.backgroundmiddle {
+  background-image: url(iMG/backgroundmid.png);
+  width: auto;
+  height: 80rem;
+}
+
+h3 {
+  padding-top: 60px;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  align-items: center;
+  align-content: space-between;
+  justify-content: space-between;
+  background-color: #003249;
+}
+.imgftr {
+  width: 40px;
+}
