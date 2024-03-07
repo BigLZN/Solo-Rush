@@ -17,11 +17,11 @@
       <nav class="Home">
         <img class="pptop" src="iMG/pp.png" />
 
-        <h1 class="h1">Développeur Web</h1>
+        <h1 class="h1">Apprenti Développeur Web</h1>
         <ul>
-          <a href="#"><li>Accueil</li></a>
-          <a href="#"><li>Home</li></a>
-          <a href="#"><li>Me</li></a>
+          <a href="#"><li>A propos</li></a>
+          <a href="#"><li>Project</li></a>
+          <a href="#"><li>Contact</li></a>
         </ul>
       </nav>
     </header>
@@ -54,40 +54,41 @@
         <span class="dot" onclick="currentSlide(1)"></span>
         <span class="dot" onclick="currentSlide(2)"></span>
       </div>
+      <div class="backgroundmiddle">
+        <h2 class="para">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio at sunt,
+          necessitatibus, soluta quibusdam consequatur nulla vero pariatur,
+          quaerat quae rem saepe laudantium. Fugiat perferendis odit ratione
+          hic. Totam, deserunt. <br />
+        </h2>
 
-      <h2>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio at sunt,
-        necessitatibus, soluta quibusdam consequatur nulla vero pariatur,
-        quaerat quae rem saepe laudantium. Fugiat perferendis odit ratione hic.
-        Totam, deserunt. <br />
-      </h2>
+        <h3 class="para">
+          <br />
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius,
+          reiciendis.
+        </h3>
 
-      <h3>
-        <br />
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius,
-        reiciendis.
-      </h3>
+        <h2 class="contact">Contact Us</h2>
+        <form action="#" method="POST">
+          <label for="email" class="email">Email:</label><br />
+          <input type="email" id="email" name="email" required /><br /><br />
 
-      <h2 class="contact">Contact Us</h2>
-      <form action="#" method="POST">
-        <label for="email">Email:</label><br />
-        <input type="email" id="email" name="email" required /><br /><br />
+          <label for="subject" class="subject">Object:</label><br />
+          <input type="text" id="subject" name="subject" required /><br /><br />
 
-        <label for="subject">Object:</label><br />
-        <input type="text" id="subject" name="subject" required /><br /><br />
+          <label for="message" class="message">Description:</label><br />
+          <textarea
+            id="message"
+            name="message"
+            rows="4"
+            cols="50"
+            required
+          ></textarea
+          ><br /><br />
 
-        <label for="message">Description:</label><br />
-        <textarea
-          id="message"
-          name="message"
-          rows="4"
-          cols="50"
-          required
-        ></textarea
-        ><br /><br />
-
-        <input type="submit" value="Submit" />
-      </form>
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
     </main>
     <footer>
       <img src="iMG/pp.png" alt="pp" class="imgftr" />

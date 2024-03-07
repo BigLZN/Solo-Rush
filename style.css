@@ -8,7 +8,6 @@ body {
   background-color: #007ea7;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
 h1,
 h2,
 h3 {
@@ -49,6 +48,13 @@ li {
   font-size: 18px;
   padding: 30px;
   display: inline;
+}
+
+ul li:hover {
+  color: #80ced7;
+}
+button:hover {
+  color: #80ced7;
 }
 
 .pptop {
@@ -133,6 +139,7 @@ img {
 .dots-container {
   text-align: center;
   padding: 48px 20px 50px 0px;
+  background-color: #01497c;
 }
 
 .dot {
@@ -151,18 +158,37 @@ img {
 
 /* Partie forms et milieu bas */
 
-.contact {
-  padding: 200px 0 20px 0;
-  font-size: 40px;
+.backgroundmiddle {
+  background-image: url(iMG/backgroundmid.png);
+  width: auto;
+  height: 80rem;
 }
+.contact {
+  padding: 180px 0 20px 0;
+  font-size: 40px;
+  color: #007ea7;
+}
+
+.para {
+  color: #007ea7;
+  padding-top: 50px;
+}
+
+.email,
+.subject,
+.message {
+  color: black;
+  font-size: 30px;
+  font-weight: bold;
+}
+
 form {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   align-content: space-around;
   text-align: center;
-  padding: 25px 0 25px 0;
-  background-color: #80ced7;
+  padding: 40px 0 40px 0;
   margin: 0 40rem 0 40rem;
 }
 
@@ -177,7 +203,6 @@ footer {
   align-content: space-between;
   justify-content: space-between;
   background-color: #003249;
-  margin-top: 80px;
 }
 .imgftr {
   width: 40px;
