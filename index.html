@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <title>Solo Rush | Quentin THUILLIER</title>
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+    <meta name="description" content="160carac" />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav class="Home">
+        <img class="pptop" src="iMG/pp.png" />
+
+        <h1 class="h1">Développeur Web</h1>
+        <ul>
+          <a href="#"><li>Accueil</li></a>
+          <a href="#"><li>Home</li></a>
+          <a href="#"><li>Me</li></a>
+        </ul>
+      </nav>
+    </header>
+    <div class="mid">
+      <img class="ppmid" src="iMG/pp.png" />
+    </div>
+
+    <main>
+      <h2 class="h2">PRESENTATION</h2>
+      <div class="back">
+        <div class="slidervar">
+          <div class="slider">
+            <div class="slide">
+              <img src="iMG/apropos.png" alt="Image 1" />
+            </div>
+            <div class="slide">
+              <img src="iMG/contact.png" alt="Image 2" />
+            </div>
+            <div class="slide">
+              <img src="iMG/skills.png" alt="Image 3" />
+            </div>
+          </div>
+          <button class="prev" onclick="prevSlide()">&#10094;</button>
+          <button class="next" onclick="nextSlide()">&#10095;</button>
+        </div>
+      </div>
+
+      <div class="dots-container">
+        <span class="dot" onclick="currentSlide(0)"></span>
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+      </div>
+
+      <h2>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio at sunt,
+        necessitatibus, soluta quibusdam consequatur nulla vero pariatur,
+        quaerat quae rem saepe laudantium. Fugiat perferendis odit ratione hic.
+        Totam, deserunt. <br />
+      </h2>
+
+      <h3>
+        <br />
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius,
+        reiciendis.
+      </h3>
+
+      <h2 class="contact">Contact Us</h2>
+      <form action="#" method="POST">
+        <label for="email">Email:</label><br />
+        <input type="email" id="email" name="email" required /><br /><br />
+
+        <label for="subject">Object:</label><br />
+        <input type="text" id="subject" name="subject" required /><br /><br />
+
+        <label for="message">Description:</label><br />
+        <textarea
+          id="message"
+          name="message"
+          rows="4"
+          cols="50"
+          required
+        ></textarea
+        ><br /><br />
+
+        <input type="submit" value="Submit" />
+      </form>
+    </main>
+    <footer>
+      <img src="iMG/pp.png" alt="pp" class="imgftr" />
+      <h3>Site by Quentin THUILLIER</h3>
+    </footer>
+  </body>
+</html>
+<script src="script.js"></script>
