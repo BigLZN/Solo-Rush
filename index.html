@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
   <head>
-    <title>Solo Rush | Quentin THUILLIER</title>
+    <title>Portfolio | Quentin THUILLIER</title>
 
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -9,113 +9,113 @@
     <meta name="robots" content="index, follow" />
     <meta
       name="description"
-      content="Découvrez mon portfolio en ligne : une vitrine de mes réalisations, compétences et expériences professionnelles. Explorez mon univers créatif !"
+      content="Portfolio dynamique mettant en valeur mes projets créatifs et compétences variées, avec une interface intuitive et un design captivant."
     />
 
     <link rel="stylesheet" href="style.css" />
   </head>
-
   <body>
     <header>
-      <nav class="Home">
-        <a href="index.html"><img class="pptop" src="iMG/pp.png" /></a>
-
-        <h1 class="h1">Apprenti Développeur Web</h1>
-        <ul>
-          <a href="#"><li>A propos</li></a>
-          <a href="index2.html"><li>Project</li></a>
-          <a href="#contact"><li>Contact</li></a>
-        </ul>
+      <nav>
+        <div class="navselect">
+          <img src="iMG/pp.png" alt="imgnav" class="imgnav" />
+          <ul>
+            <li><a href="#">Accueil</a></li>
+            <li><a href="#">Projet</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
       </nav>
     </header>
-    <div class="mid">
-      <img class="ppmid" src="iMG/pp.png" />
-    </div>
-
+    <hr class="divider" />
     <main>
-      <h2 class="h2">PRESENTATION</h2>
-      <div class="back">
-        <div class="slidervar">
-          <div class="slider">
-            <div class="slide">
-              <a href="#"><img src="iMG/apropos.png" alt="Image 1" /></a>
-            </div>
-            <div class="slide">
-              <a href="#contact"><img src="iMG/contact.png" alt="Image 2" /></a>
-            </div>
-            <div class="slide">
-              <a href="#"><img src="iMG/skills.png" alt="Image 3" /></a>
-            </div>
-          </div>
-          <button class="prev" onclick="prevSlide()">&#10094;</button>
-          <button class="next" onclick="nextSlide()">&#10095;</button>
-        </div>
-      </div>
+      <div class="topall">
+        <img src="iMG/linkdin.jpg" al="imgnav" class="topimg" />
+        <div class="top">
+          <h1>Apprenti Développeur Web</h1>
+          <hr class="divider1" />
 
-      <div class="dots-container">
-        <span class="dot" onclick="currentSlide(0)"></span>
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-      </div>
-      <div class="backgroundmiddle">
-        <h2 class="para">
-          Salut, je suis Quentin THUILLIER, j'ai 19 ans et depuis que je suis
-          tout petit, l'informatique m'a toujours passionné. C'est comme si
-          j'avais été attiré par les écrans et les lignes de code dès mon plus
-          jeune âge. Je suis constamment à la recherche de nouvelles
-          connaissances et de nouvelles compétences dans ce domaine en
-          perpétuelle évolution. J'adore explorer les différentes facettes de la
-          technologie, que ce soit la programmation, la conception de logiciels
-          ou même la résolution de problèmes complexes. Pour moi, l'informatique
-          n'est pas seulement un passe-temps, c'est une véritable passion qui me
-          pousse à repousser mes limites et à découvrir de nouvelles
-          possibilités chaque jour.<br />
-        </h2>
-
-        <h3 class="para">
-          <br />
-          J'adore cacher des secrets dans mes sites :p
-        </h3>
-        <div id="contact">
-          <div class="forms">
-            <h2 class="contact">Contacter moi</h2>
-            <form action="#" method="POST">
-              <label for="email" class="email">Email:</label><br />
-              <input
-                type="email"
-                id="email"
-                name="email"
-                required
-              /><br /><br />
-
-              <label for="subject" class="subject">Objet:</label><br />
-              <input
-                type="text"
-                id="subject"
-                name="subject"
-                required
-              /><br /><br />
-
-              <label for="message" class="message">Description:</label><br />
-              <textarea
-                id="message"
-                name="message"
-                rows="4"
-                cols="50"
-                required
-              ></textarea
-              ><br /><br />
-
-              <input type="submit" value="Submit" />
-            </form>
-          </div>
+          <p class="para">
+            Salut, je suis Quentin THUILLIER, j'ai 19 ans et depuis que je suis
+            tout petit, l'informatique m'a toujours passionné. <br />C'est comme
+            si j'avais été attiré par les écrans et les lignes de code dès mon
+            plus jeune âge. <br />
+            suis constamment à la <br />recherche de nouvelles connaissances et
+            de nouvelles compétences dans ce domaine en perpétuelle
+            évolution.<br />
+            J'adore explorer les différentes facettes de la technologie, que ce
+            soit la programmation, <br />la conception de logiciels ou même la
+            résolution de problèmes complexes. Pour moi, l'informatique n'est
+            pas seulement un passe-temps, <br />c'est une véritable passion qui
+            me pousse à repousser mes limites et à découvrir de nouvelles
+            possibilités chaque jour. <br /><br />J'adore cacher des secrets
+            dans mes sites :p
+          </p>
         </div>
       </div>
     </main>
+
+    <hr class="divider" />
+
+    <section>
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <img src="iMG/apropos.png" style="width: 100%" />
+        </div>
+
+        <div class="mySlides fade">
+          <img src="iMG/skills.png" style="width: 100%" />
+        </div>
+
+        <div class="mySlides fade">
+          <img src="iMG/contact.png" style="width: 100%" />
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+    </section>
+
+    <hr class="divider" />
+
+    <section>
+      <div class="container">
+        <h2>ME CONTACTER</h2>
+        <form action="#">
+          <div class="input-group">
+            <label for="email">Email :</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Votre adresse email"
+            />
+          </div>
+          <div class="input-group">
+            <label for="objet">Objet :</label>
+            <input
+              type="text"
+              id="objet"
+              name="objet"
+              placeholder="L'objet de votre message"
+            />
+          </div>
+          <div class="input-group">
+            <label for="description">Description :</label>
+            <textarea
+              id="description"
+              name="description"
+              rows="4"
+              placeholder="Votre message"
+            ></textarea>
+          </div>
+          <button type="submit">Envoyer</button>
+        </form>
+      </div>
+    </section>
+    <hr class="divider" />
     <footer>
-      <img src="iMG/pp.png" alt="pp" class="imgftr" />
-      <h3>Site by Quentin THUILLIER</h3>
+      <p>Site Créer par Quentin THUILLIER</p>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
-<script src="script.js"></script>
