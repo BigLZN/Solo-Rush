@@ -49,3 +49,25 @@ document.querySelector(".topimg").addEventListener("click", function () {
     });
   }, 1000);
 });
+
+function submitForm() {
+  // Afficher une alerte personnalisée
+  var confirmationMessage = document.createElement("div");
+  confirmationMessage.textContent = "Votre mail a bien été envoyé !";
+  confirmationMessage.style.backgroundColor = "green";
+  confirmationMessage.style.color = "white";
+  confirmationMessage.style.position = "fixed";
+  confirmationMessage.style.bottom = "20px";
+  confirmationMessage.style.left = "20px";
+  confirmationMessage.style.padding = "10px";
+  confirmationMessage.style.borderRadius = "5px";
+  document.body.appendChild(confirmationMessage);
+
+  // Redirection vers la page d'accueil après 3 secondes
+  setTimeout(function () {
+    window.location.href = "index.html"; // Remplacez par votre URL de page d'accueil
+  }, 3000); // Redirection après 3 secondes (3000 millisecondes)
+
+  // Empêcher la soumission du formulaire par défaut
+  return false;
+}

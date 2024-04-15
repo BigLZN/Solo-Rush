@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Shadows+Into+Light&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Lobster&family=Shadows+Into+Light&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  line-height: 1.5;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-image: url("./iMG/laboratoire-informatique-futuriste-eclairage-bleu-vif-genere-par-ia.jpg");
+  background-size: cover;
+}
+
+.navselect {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 20px 0 20px;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+  padding: 55px 100px 25px 0;
+  font-size: 30px;
+  list-style-type: none;
+}
+
+li a {
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+  font-weight: bolder;
+  font-family: "Lobster", sans-serif;
+  user-select: none;
+}
+
+li a:hover {
+  color: #6148a7;
+  transform: scale(1.1);
+  -webkit-text-stroke: 0.1px white;
+}
+
+img {
+  user-select: none;
+}
+
+.imgnav {
+  border-radius: 300px;
+  width: 100px;
+  height: 100px;
+  margin: 50px 0 0 50px;
+  border: solid 1.5px white;
+}
+
+h1 {
+  font-family: "Indie Flower", cursive;
+  color: rgb(255, 255, 255);
+  font-weight: bolder;
+  text-align: center;
+  font-size: 100px;
+  -webkit-text-stroke: 0.1px rgb(0, 0, 0);
+}
+
+h2 {
+  font-family: "Shadows Into Light", cursive;
+  color: rgb(255, 255, 255);
+  font-weight: bolder;
+  font-size: 50px;
+}
+
+.dividerp {
+  width: 500px;
+  position: relative;
+  bottom: 80px;
+  height: 2px;
+  border-color: black;
+  background-color: black;
+}
+
+.jeupan {
+  width: 500px;
+}
